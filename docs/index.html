@@ -3,7 +3,7 @@ Team Name: Team Powell
 Contributors: Cam Smith, Aaron Yorke, Grace Rawlings
 Date: 2026
 Source:
-[0] Instructions, [1] Course, [Github], [wwr]
+[0] Instructions, [1] Course, [3] Github, [4] wwr, [5] Google
 -->
 
 <!DOCTYPE html>
@@ -12,73 +12,80 @@ Source:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wdd130-Powell-Homepage</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <div id="content">
         <header>
-            <img class="logo" src="images/Powell_Logo.png">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About Us</a>
+            <nav class="nav">
+                <img class="logo" src="images/Powell_Logo.png">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#">About Us</a>
             </nav>
-            <div id="hero">
-                <div id="hero-msg">
-                    <h1>WE DO THE ADULTING FOR YOU</h1>
-                </div>
-                <div class="hero-btn">
-                    <a class="get" href="#">Get Your Adult-O-Matic!</a>
-                </div>
-            </div>
         </header>
 
         <main class="home-grid">
-            <section id="essentials-card">
-                <h3>Never Forget Essentials</h3>
-                <img class="card-img" src="images/placeholder.png" alt="Pen and Paper">
+            
+            <section id="hero">
+                    <h1 id="hero-msg">WE DO THE ADULTING FOR YOU</h1>
+                <div id="hero-btn">
+                    <a id="get" href="#">Get Your Adult-O-Matic!</a>
+                </div>
             </section>
-            <section class="anxiety-card">
-                <h3>Lower Anxiety</h3>
-                <img class="card-img" src="images/placeholder.png" alt="Relaxed Emoji">
+
+        
+            <section id="features">
+                <div id="essentials-card">
+                    <h3>Never Forget Essentials</h3>
+                    <img class="card-img" src="images/writing-on-paper.png" alt="Pen and Paper">
+                </div>
+                <div id="anxiety-card">
+                    <h3>Lower Anxiety</h3>
+                    <img class="card-img" src="images/Relaxed-emoji.png" alt="Relaxed Emoji">
+                </div>
+                <div id="adulting-card">
+                    <h3>Simplified Adulting</h3>
+                    <img class="card-img" src="images/checklist.png" alt="Checklist">
+                </div>
             </section>
-            <section class="adulting-card">
-                <h3>Simplified Adulting</h3>
-                <img class="card-img" src="images/placeholder.png" alt="Checklist">
-            </section>
-            <section class="how-it-works">
+
+            <section id="how-it-works">
                 <h1>HOW IT WORKS</h1>
-            </section>
-            <section class="select-plan-box">
-                <h3>Select Plan</h3>
-                <img class="box-img" src="images/placeholder.png" alt="Box">
-            </section>
-            <section class="personalize-box">
-                <h3>Personalize Your Plan</h3>
-                <img class="box-img" src="images/placeholder.png" alt="Gear">
-            </section>
-            <section class="sanity-box">
-                <h3>Monthly Sanity</h3>
-                <img class="box-img" src="images/placeholder.png" alt="Happy Emoji">
+                <div id="select-plan-box">
+                    <h3 class="hiw-h3">Select Plan</h3>
+                    <img class="box-img" src="images/box.png" alt="Box">
+                </div>
+                <div id="personalize-box">
+                    <h3 class="hiw-h3">Personalize Your Plan</h3>
+                    <img class="box-img" src="images/gear.jpg" alt="Gear">
+                </div>
+                <div id="sanity-box">
+                    <h3 class="hiw-h3">Monthly Sanity</h3>
+                    <img class="box-img" src="images/smiling-emoji.png" alt="Happy Emoji">
+                </div>
             </section>
         </main>
 
-
-
         <footer>
-            <p>&copy;2026 Jake Powell</p>
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
-            <div class="social">
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://x.com" target="_blank">
-                    <img src="images/X_logo.png" alt="X icon">
-                </a>
+            <div id="footer-nav">
+                <p>&copy;2026 Jake Powell</p>
+                <div id="footer-links">
+                <a class="footer-link" href="#">Products</a>
+                <a class="footer-link" href="#">About Us</a>
+                </div>
+                <div class="social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://x.com" target="_blank">
+                        <img src="images/X_logo.png" alt="X icon">
+                    </a>
+                </div>
             </div>
         </footer>
     </div>

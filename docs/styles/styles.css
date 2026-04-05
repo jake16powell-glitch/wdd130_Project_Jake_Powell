@@ -1,0 +1,233 @@
+/* 
+Team Name: Team Powell
+Contributors: Cam Smith, Aaron Yorke, Grace Rawlings
+Date: 2026
+Source:
+[0] Instructions, [1] Course, [3] Github, [4] wwr, [5] Google 
+*/
+
+/* COLORS:
+Header: Deep Navy (#0F1D36) background with White (#FFFFFF) navigation text.
+Hero Section: Pure White (#FFFFFF) background. Bold Navy (#0F1D36) headline. A very prominent Vibrant Orange (#FD853A) 'Get Started' button.
+Feature Section: Petrol Teal (#1A7B8B) background with White text and icons (wrench, lightbulb, etc.).
+How It Works Section: Pure White (#FFFFFF) cards on a Section Gray (#F3F3F5) background. Body text in Body Gray (#B5B5B5).
+Footer: Gray (#F3F3F5) with Deep Navy (#0F1D36) text links and copyright. 
+*/
+
+/* FONTS:
+For Titles / headers / navigation: Century Gothic
+For explanations / paragraphs: Georgia 
+*/
+
+
+#content {
+    background-color: pink;
+}
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.logo {
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0F1D36;
+    text-align: center;
+    height: 120px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Century Gothic, sans-serif;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#hero {
+    background-color: #FFFFFF;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 300px 20px;
+}
+
+#hero-msg {
+    color: #0F1D36;
+    font-family: Century Gothic, sans-serif;
+    font-size: 3rem;
+}
+
+#hero-btn {
+    display: inline-block;
+    background-color: #FD853A;
+    border: 2px solid #0F1D36;
+    border-radius: 5%;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#get {
+    color: #0F1D36;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Century Gothic, sans-serif;
+}
+
+#features {
+    background-color: #1A7B8B;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#essentials-card {
+    grid-column: 1 / 2;
+    background-color: #1A7B8B;
+    margin-top: 150px;
+}
+
+#anxiety-card {
+    grid-column: 2 / 3;
+    background-color: #1A7B8B;
+    margin-top: 150px;
+}
+
+#adulting-card {
+    grid-column: 3 / 4;
+    background-color: #1A7B8B;
+    margin-top: 150px;
+}
+
+h3 {
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.card-img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#how-it-works {
+    background-color: #F3F3F5;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+    color: #0F1D36;
+    grid-column: 1 / -1;
+    font-family: Century Gothic, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hiw-h3 {
+    color: #B5B5B5;
+    font-family: Century Gothic, sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#select-plan-box {
+    background-color: #FFFFFF;
+    grid-column: 1 / 2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#personalize-box {
+    background-color: #FFFFFF;
+    grid-column: 2 / 3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#sanity-box {
+    background-color: #FFFFFF;
+    grid-column: 3 / 4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+#footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0F1D36;
+    text-align: center;
+    height: 120px;
+    align-items: center;
+}
+
+p {
+    color: #F3F3F5;
+    font-family: Century Gothic, sans-serif;
+    font-size: 1rem;
+    grid-column: 1 / 2;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    grid-column: 2 / 3;
+}
+
+.footer-link {
+    color: #F3F3F5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Century Gothic, sans-serif;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 3 / 4;
+}
